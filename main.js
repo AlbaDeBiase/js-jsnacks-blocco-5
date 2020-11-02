@@ -35,8 +35,12 @@ console.log(bici);
 for (var i = 0; i < bici.length; i++) {
     var biciCorrente= bici[i];
     console.log(biciCorrente);
+// Stampare a schermo la bici con peso minore.
+    if (biciCorrente.weight < '6kg') {
+        console.log(biciCorrente);
+    }
 
-
+}
 
 
 })

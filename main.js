@@ -13,11 +13,11 @@ $(document).ready(function() {
     [
     {
     'nome' : 'Mountain bike',
-    'peso' : 5
+    'peso' : 6
     },
     {
     'nome' : 'Bmx',
-    'peso' : 6
+    'peso' : 5
     },
     {
     'nome' : 'Bici elettrica',
@@ -29,18 +29,32 @@ $(document).ready(function() {
     ];
 
 // Stampo l'array di bici
-console.log(bici);
+// console.log(bici);
 
+// definisco il paso minimo in una variabile
+    var pesoMinimo = bici[0].peso;
+// mi salvo un indice che tiene traccia del peso minore
+    var indice = 0;
 // Ciclo tutte le bici e loro proprietà
-for (var i = 0; i < bici.length; i++) {
-    var biciCorrente= bici[i];
-    console.log(biciCorrente);
-// Stampare a schermo la bici con peso minore.
-    if (biciCorrente["peso"] < 6) {
-        console.log("peso minore");
-    }
+    for (var i = 0; i < bici.length; i++) {
+// salvo la bici corrente in una variabile
+        var biciCorrente= bici[i];
+        var biciPeso = biciCorrente.peso;
+// confronto con il peso minimo
+        if (biciPeso < pesoMinimo) {
+        pesoMinimo = biciPeso;
+// salvo l'indice
+        indice= i;
 
+        }
 }
 
+// Stampare a schermo la bici con peso minore.
+console.log(bici[indice].nome)
+console.log(bici[indice].peso)
+
+
+
+// devo comparare la bici corrente alla posizione uno e salvare una variabile con cui comparo le altre
 
 })

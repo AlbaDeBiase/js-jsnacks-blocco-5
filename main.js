@@ -13,18 +13,18 @@ $(document).ready(function() {
     [
     {
     'nome' : 'Mountain bike',
-    'peso' : '5kg'
+    'peso' : 5
     },
     {
     'nome' : 'Bmx',
-    'peso' : '6kg'
+    'peso' : 6
     },
     {
     'nome' : 'Bici elettrica',
-    'peso' : '7kg'
+    'peso' : 7
     },{
     'nome' : 'Fat bike',
-    'peso' : '8kg'
+    'peso' : 8
     },
     ];
 
@@ -36,8 +36,8 @@ for (var i = 0; i < bici.length; i++) {
     var biciCorrente= bici[i];
     console.log(biciCorrente);
 // Stampare a schermo la bici con peso minore.
-    if (biciCorrente.weight < '6kg') {
-        console.log(biciCorrente);
+    if (biciCorrente["peso"] < 6) {
+        console.log("peso minore");
     }
 
 }

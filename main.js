@@ -17,17 +17,16 @@ $(document).ready(function() {
         console.log(numero1);
         console.log(numero2);
 
-// se il numero corrente si trova tra numero 1 e numero 2 stampo e inserisco in nuovo array.
+// se la posizione corrente si trova tra numero 1 e numero 2 stampo e inserisco in nuovo array.
+        var nuovoArray= [0,1,2,3];
+        i=0;
+    for (var i = 0; i < nomi.length; i++) {
+        nomi[i];
+        console.log(nomi);
+}
+        var posizioneCorrente = numero1 && numero2;
+        posizioneCorrente.push(nuovoArray);
+        console.log(nuovoArray);
 
-//         var indice = 0;
-//     for (var i = 0; i < nomi.length; i++) {
-//         nomeCorrente=nomi[i]
-//         console.log(nomeCorrente);
-//
-// }
-//
-//     if (indice == numero1 || numero2) {
-//         console.log(indice);
-// }
 
 })

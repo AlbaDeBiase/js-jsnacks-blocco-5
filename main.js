@@ -7,25 +7,25 @@
 
 $(document).ready(function() {
 // creo un array di nomi
-        var nomi = ['Alba', 'Dario', 'Isabella','Maria'];
+        var nomi = ['Alba', 'Dario', 'Isabella','Maria', 'Luca'];
 
     // console.log(nomi);
-// chiedo all'utente 2 numeri
-        var numero1 = parseInt(prompt('Inserisci un numero'));
-        var numero2 = parseInt(prompt('Inserisci un altro numero'));
+
+// chiedo all'utente 2 numeri compresi tra 0 e 4
+        var numero1 = parseInt(prompt('Inserisci un numero tra 0 e 4'));
+        var numero2 = parseInt(prompt('Inserisci un altro numero tra 0 e 4'));
 
         console.log(numero1);
         console.log(numero2);
 
-// se la posizione corrente si trova tra numero 1 e numero 2 stampo e inserisco in nuovo array.
-        var nuovoArray= [0,1,2,3];
-        i=0;
-    for (var i = 0; i < nomi.length; i++) {
-        nomi[i];
-        console.log(nomi);
+// se la posizione corrente si trova tra numero 1 e numero 2
+        var nuovoArray= [];
+    for (var i = numero1; i <= numero2; i++) {
+        var nome=nomi[i];
+        console.log(nome);
 }
-        var posizioneCorrente = numero1 && numero2;
-        posizioneCorrente.push(nuovoArray);
+// stampo e inserisco in nuovo array.
+        nuovoArray.push(nome);
         console.log(nuovoArray);
 
 

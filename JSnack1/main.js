@@ -7,6 +7,15 @@
 
 // creo un array di oggetti che descrivono una bici
 
+// JSnack1:
+// Creare un array di oggetti: ogni oggetto descriverà una bici da corsa con le seguenti proprietà:
+// nome e peso.
+// Stampare a schermo la bici con peso minore.
+
+
+
+// creo un array di oggetti che descrivono una bici
+
 $(document).ready(function() {
 
     var bici =

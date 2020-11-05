@@ -21,19 +21,19 @@ $(document).ready(function() {
     var bici =
     [
     {
-    'nome' : 'Mountain bike',
-    'peso' : 6
+        'nome' : 'Mountain bike',
+        'peso' : 6
     },
     {
-    'nome' : 'Bmx',
-    'peso' : 5
+        'nome' : 'Bmx',
+        'peso' : 5
     },
     {
-    'nome' : 'Bici elettrica',
-    'peso' : 7
+        'nome' : 'Bici elettrica',
+        'peso' : 7
     },{
-    'nome' : 'Fat bike',
-    'peso' : 8
+        'nome' : 'Fat bike',
+        'peso' : 8
     },
     ];
 
@@ -56,7 +56,7 @@ $(document).ready(function() {
         indice= i;
 
         }
-}
+    }
 
 // Stampare a schermo la bici con peso minore.
 console.log(bici[indice].nome)
